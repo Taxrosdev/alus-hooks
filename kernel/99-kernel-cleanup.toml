@@ -1,0 +1,6 @@
+Description = "Cleaning up old kernels"
+Exec = "/usr/share/alus/hooks/99-kernel-cleanup.sh"
+
+[Permissions]
+"boot" = "rw"
+

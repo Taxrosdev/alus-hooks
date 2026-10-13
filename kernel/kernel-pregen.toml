@@ -1,0 +1,7 @@
+Description = "Installing kernel"
+Exec = "/usr/share/alus/hooks/kernel-pregen.sh"
+
+[Permissions]
+"usr" = "ro"
+"boot" = "rw"
+

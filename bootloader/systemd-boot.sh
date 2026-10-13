@@ -13,7 +13,9 @@ if [ ! -e $LOADER_ENTRY ]; then
 cat << EOF > $LOADER_ENTRY
 title   ${PRETTY_NAME} (${ALUS_COMMIT_HASH})
 linux   /vmlinuz-${ALUS_COMMIT_HASH}
-initrd  /initramfs-${ALUS_COMMIT_HASH}.img
+initrd  /initramfs-${ALUS_COMMIT_HASH}
 options COMMIT_HASH=${ALUS_COMMIT_HASH}
 EOF
 fi
+
+# TODO: Autocleanup old entries
